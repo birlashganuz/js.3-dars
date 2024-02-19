@@ -36,6 +36,15 @@ ol {
 }
 
 .menu .menu__item:hover {
-    text-decoration: solid;
     color: #cac4c4;
+}
+
+.spacial {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: goldenrod;
+}
+
+.menu .menu__item:hover .spacial {
+    color: rgb(150, 112, 16);
 }
