@@ -1,6 +1,6 @@
 n = +prompt('Yulduzchalar sonini kiriting:')
-while (isNaN(n)) {
-    n = +prompt('Yulduzchalar sonini natural sonda kiriting:')
+while (isNaN(n) || n < 4 || n > 50) {
+    n = +prompt('Yulduzchalar sonini natural sonda kiriting (kiritilgan son 3 dan katta 51 dan kichkina bo\'lishi shart):')
 }
 if (n % 2 == 1) {
     n += 1
