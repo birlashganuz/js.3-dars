@@ -32,7 +32,6 @@ ol {
     font-size: 20px;
     font-weight: 500;
     text-decoration: none;
-
 }
 
 .menu .menu__item:hover {
@@ -47,4 +46,16 @@ ol {
 
 .menu .menu__item:hover .spacial {
     color: rgb(150, 112, 16);
+}
+
+.menu li:nth-child(8) {
+    position: relative;
+}
+
+.exp-1 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 200px;
+    width: 200px;
 }
