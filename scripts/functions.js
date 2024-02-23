@@ -28,3 +28,4 @@ function stars(n = 3) {
 }
 
 stars(n)
+
