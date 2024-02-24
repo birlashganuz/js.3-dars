@@ -1,10 +1,6 @@
 function math() {
-    k = +prompt('Yechmoqchi bo\'gan misollar sonini kiriting:', 5)
     let amallar = '+-*/%'
     for (let i = 0; i <= k; i++) {
-
-
-
         let index = Math.round((Math.random() * ((amallar.length - 1) - 0) + 0))
         let amal = amallar[index]
         let n = +prompt('1-sonni kiriting:')
@@ -32,10 +28,11 @@ function math() {
             console.log(`Sizning javobingiz noto\'ri: ${userAnswer}, to\'g\'ri javob: ${answer}`)
         }
     }
+    alert('Natijalarni console da berildi.')
 }
 
-
-math()
+k = +prompt('Yechmoqchi bo\'gan misollar sonini kiriting:', 5)
+math(k)
 
 
 // let str = "/";

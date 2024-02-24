@@ -54,7 +54,7 @@ ol {
 
 .exp-1 {
     position: absolute;
-    right: 0;
+    right: -250px;
     top: 0;
     height: 200px;
     width: 200px;
