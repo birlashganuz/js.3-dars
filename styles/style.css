@@ -9,6 +9,10 @@ body {
     background-color: #000;
 }
 
+.relative {
+    position: relative;
+}
+
 .container {
     max-width: 1140px;
     width: 100%;
@@ -41,15 +45,15 @@ ol {
 .spacial {
     text-transform: uppercase;
     font-weight: 700;
-    color: goldenrod;
+    color: rgb(218, 165, 32);
 }
 
 .menu .menu__item:hover .spacial {
     color: rgb(150, 112, 16);
 }
 
-.menu li:nth-child(8) {
-    position: relative;
+.menu li {
+    padding-bottom: 6px;
 }
 
 .exp-1 {
@@ -58,4 +62,29 @@ ol {
     top: 0;
     height: 200px;
     width: 200px;
+}
+
+.item-title {
+    display: block;
+    background-color: greenyellow;
+    padding: 4px 6px;
+    color: black;
+}
+
+.line {
+    display: block;
+    border: 1px solid #FFF;
+    position: relative;
+}
+
+.line::after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    border-top: 2px solid #FFF;
+    border-right: 2px solid #FFF;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translateY(-50%) rotate(45deg);
 }

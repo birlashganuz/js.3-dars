@@ -3,8 +3,8 @@ function math() {
     for (let i = 0; i <= k; i++) {
         let index = Math.round((Math.random() * ((amallar.length - 1) - 0) + 0))
         let amal = amallar[index]
-        let n = +prompt('1-sonni kiriting:')
-        let m = +prompt('2-sonni kiriting:')
+        let n = Math.round(Math.random() * 10)
+        let m = Math.round(Math.random() * 10)
         let userAnswer = +prompt('Hisoblang: ' + n + amal + m)
         if (amal == '+') {
             answer = n + m
