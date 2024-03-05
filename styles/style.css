@@ -32,6 +32,10 @@ ol {
     text-align: justify;
 }
 
+main{
+    margin-bottom: 50px;
+}
+
 .menu .menu__item {
     font-size: 20px;
     font-weight: 500;

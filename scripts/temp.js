@@ -142,4 +142,109 @@ console.log(Object.values(my_obj)); // ['bar']
 
 
 // Аргумент, не являющийся объектом, будет приведён к объекту
-console.log(Object.values("foo")); // ['f', 'o', 'o']
+// console.log(Object.values("foo")); // ['f', 'o', 'o']
+
+const hello = "привет мир. пока мир";
+const world = hello.substring(7, 10); // с 7-го по 10-й индекс
+console.log(world);
+console.log('mahalla'.lastIndexOf('a',4));
+
+
+// for (const key in object) {
+    //     if (Object.hasOwnProperty.call(object, key)) {
+    //         const element = object[key];
+    //         console.log(element);
+
+    //     }
+    //     console.log(object[key]);
+    // }
+
+
+
+
+    // // alert('a' in a)
+
+    // let a=["letters: 6", "letters: 9", "letters: 5", "letters: 7", "letters: 3"]
+    // function isSymbolLetter(array) {
+    //     let includedSimbol = 'qwertyuioplkjhgfdsazxcvbnm';
+    //     let arrSimbols = array.join('').toLowerCase().split('');
+    //     let check = 0;
+
+    //     arrSimbols.forEach(element => {
+    //       if (includedSimbol.includes(element)) {
+    //         check++;
+    //       }
+    //     });
+    //     return check;
+    //   }
+    // console.log(isSymbolLetter(a));
+
+
+    // function isSymbolLetter(array) {
+    //     return array.map(str => { return { 
+    //       letters: str.toLowerCase().split('').filter(a => a >= 'a' && a <= 'z').length
+    //     }; });
+    //   }
+
+    //   let data = ["u\Z%Cm@kc|", "6kmpNvMqQK", "THbw%}\_2L", "}QVMQbik@'", "g}7P5+:?>f"];
+    //   console.log(isSymbolLetter(data));
+
+
+    // let str='asds!ds!!!'
+    // let count=str.match(/[!]/g).length
+    // console.log(count);
+
+    // let text = "The rain in SPAIN stays mainly in the plain";
+// let result = text.match("ain");
+// let result = text.match(/ain/g);
+// let result = text.match(/ain/gi);
+// console.log(result);
+// ["Бильбо", "Гэндальф", "Назгул"].forEach((item, index, array) => {
+//     alert(`У ${item} индекс ${index} в ${array}`);
+//   });
+
+// let arr = [1, 2, 3, 4, 5];
+
+// let result = arr.reduce((sum, current) => sum + current, 0);
+
+// alert(result); // 15
+
+// let arr = [5, 3, 8, 1];
+
+// let filtered = filterRange(arr, 1, 4);
+
+// alert( filtered ); // 3,1 (совпадающие значения)
+
+// alert( arr ); // 5,3,8,1 (без изменений)
+
+// function filterRange(arr, a, b) {
+//     // добавлены скобки вокруг выражения для улучшения читабельности
+//     return arr.filter(item => (a <= item && item <= b));
+//   }
+
+// let count_key = str.match(/!/g).length
+
+
+// const set1 = new Set();
+// set1.add({ x: 10, y: 20 }).add({ x: 20, y: 30 });
+
+// // Delete any point with `x > 10`.
+// set1.forEach((point) => {
+//     //   if (point.x > 10) {
+//     //     set1.delete(point);
+//     //   }
+// });
+
+// console.log(set1);
+// console.log(set1.size);
+// // Expected output: 1
+
+const array = [15, 1, 1, 21, 2, 3, 4, 5, 6, 7, 5, 4, 5, 6, 3,-12]
+
+// const result = array.find(number => number == 2) // 2 teng elementlarning eng birinchisini qaytaradi
+// const result = array.filter(value => value > 4) // 4 dan katta elementlarni barchasini qaytaradi
+// const result = array.filter(value => value == 4).length 4 dan katta elementlarni barchasini sonini qaytaradi
+// const result = array.map(value => 'element:' + value) // har bir topilgan elemnt aldiga "element:" belgisini qo`yib (element:1...) kabi qaytaradi
+const result = array.sort((value1, value2) => value1 - value2) // value1-value2 - o`sib borish tartibida qaytaradi
+
+console.log(result);
